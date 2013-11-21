@@ -7,6 +7,7 @@ Push notifications for AngularJs apps using Twitter Bootstrap 3.x.x.
 
 Simple setup. First, copy this HTML onto your UI.
 
+
 <pre>
 &#60;div class='notification-container ng-cloak'&#62;
     &#60;div ng-repeat="notification in notifications" class="alert alert-dismissable alert-{{notification.type}}"&#62;
@@ -15,7 +16,9 @@ Simple setup. First, copy this HTML onto your UI.
 &#60;/div&#62;
 </pre>
 
+
 Next, copy this CSS into a stylesheet or the head of your index.html file:
+
 
 <pre>
 .notification-container {
@@ -27,6 +30,7 @@ Next, copy this CSS into a stylesheet or the head of your index.html file:
     z-index: 50000;
 }
 </pre>
+
 
 Finally, sync a variable in a controller with Notify's notifications using `Notify.list()`. Make sure you expose it to the controller's $scope, like so. (Coffeescript)
 
@@ -41,13 +45,18 @@ Now push notifications are as easy as `Notify.push 'This is a notification!'`
 ###Usage
 
 Notify exposes 5 functions. 
+
 - `Notify.push(message, type, timeout)` - Add notifications to the view. The `message` parameter is required and is the mesage you want to display. The `type` parameter is the type (color) of the notification you want to display. It accepts `success`, `info`, `warning`, and `danger`. Defaults to `success`. The `timeout` parameter is also optional. If set, it removes the notification after x milliseconds. `Notify.push()` returns a nofication that can be removed using `Notify.remove(notif)`
+
 
 - `Notify.remove()` removes a notification. It accepts either a notification returned from the `Notify.push()` function or the index of the nofication you want to remove.
 
+
 - `Notify.list()` returns all notifications.
 
+
 - `Notify.clear()` removes all notifications.
+
 
 - `Notify.setScope()` accepts a scope as a parameter. It defaults to $rootScope. To learn more about `scopes`, `digest` and such, refer to the <a href='http://docs.angularjs.org/guide/scope'>AngularJS documentation.</a>
 
