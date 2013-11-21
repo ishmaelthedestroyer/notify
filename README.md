@@ -28,7 +28,7 @@ Next, copy this CSS into a stylesheet or the head of your index.html file:
 }
 </pre>
 
-Next, sync a variable in a controller with Notify's notifications using `Notify.list()`. Make sure you expose it to the controller's $scope, like so. (Coffeescript)
+Finally, sync a variable in a controller with Notify's notifications using `Notify.list()`. Make sure you expose it to the controller's $scope, like so. (Coffeescript)
 
 <pre>
 app.controller 'MyCTRL', [ '$scope', 'Notify', ($scope, Notify) ->
