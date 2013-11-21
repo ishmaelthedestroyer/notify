@@ -5,21 +5,21 @@ Push notifications for AngularJs apps using Twitter Bootstrap 3.x.x.
 
 Simple setup. First, copy this HTML onto your UI.
 
-&#60;pre&#62;
+<pre>
 &#60;div class='notification-container ng-cloak'&#62;
     &#60;div ng-repeat="notification in notifications" class="alert alert-dismissable alert-{{notification.type}}"&#62;
         {{notification.message}}
     &#60;/div&#62;
 &#60;/div&#62;
-&#60;/pre&#62;
+</pre>
 
 Next, sync a variable in a controller with Notify's notifications using `Notify.list()`. Make sure you expose it to the controller's $scope, like so. (Coffeescript)
 
-&#60;pre&#62;
+<pre>
 app.controller 'MyCTRL', [ '$scope', 'Notify', ($scope, Notify) -&#62;
 	$scope.notifications = Notify.list()
 ]
-&#60;/pre&#62;
+</pre>
 
 Now push notifications are as easy as `Notify.push 'This is a notification!'`
 
