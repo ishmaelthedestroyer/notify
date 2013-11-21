@@ -36,7 +36,7 @@ Notify exposes 5 functions.
 
 
 ###Notes
-Developed by <a href='http://twitter.com/ishmaelsalive'>Ishmael</a>. &#60;br />
+Developed by <a href='http://twitter.com/ishmaelsalive'>Ishmael</a>. <br />
 
 Feedback, suggestions? Tweet me <a href='http://twitter.com/ishmaelsalive'>@IshmaelsAlive</a>. <br />
 Need some personal help? Email me @ <a href='mailto:ishmaelthedestroyer@gmail.com?Subject=LazyNMean'>ishmaelthedestroyer@gmail.com</a>
