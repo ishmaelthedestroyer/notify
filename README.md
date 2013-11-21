@@ -32,7 +32,7 @@ Notify exposes 5 functions.
 
 - `Notify.clear()` removes all notifications.
 
-- `Notify.setScope()` accepts a scope as a parameter. It defaults to $rootScope. To learn more about `scopes`, `digest` and such, refer to the &#60;a href='http://docs.angularjs.org/guide/scope'&#62;AngularJS documentation.&#60;/a&#62;
+- `Notify.setScope()` accepts a scope as a parameter. It defaults to $rootScope. To learn more about `scopes`, `digest` and such, refer to the <a href='http://docs.angularjs.org/guide/scope'>AngularJS documentation.</a>
 
 
 ###Notes
