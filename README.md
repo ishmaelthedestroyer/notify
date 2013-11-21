@@ -5,21 +5,21 @@ Push notifications for AngularJs apps using Twitter Bootstrap 3.x.x.
 
 Simple setup. First, copy this HTML onto your UI.
 
-<pre>
-<div class='notification-container ng-cloak'>
-    <div ng-repeat="notification in notifications" class="alert alert-dismissable alert-{{notification.type}}">
+&#60;pre&#62;
+&#60;div class='notification-container ng-cloak'&#62;
+    &#60;div ng-repeat="notification in notifications" class="alert alert-dismissable alert-{{notification.type}}"&#62;
         {{notification.message}}
-    </div>
-</div>
-</pre>
+    &#60;/div&#62;
+&#60;/div&#62;
+&#60;/pre&#62;
 
 Next, sync a variable in a controller with Notify's notifications using `Notify.list()`. Make sure you expose it to the controller's $scope, like so. (Coffeescript)
 
-<pre>
-app.controller 'MyCTRL', [ '$scope', 'Notify', ($scope, Notify) ->
+&#60;pre&#62;
+app.controller 'MyCTRL', [ '$scope', 'Notify', ($scope, Notify) -&#62;
 	$scope.notifications = Notify.list()
 ]
-</pre>
+&#60;/pre&#62;
 
 Now push notifications are as easy as `Notify.push 'This is a notification!'`
 
@@ -32,11 +32,11 @@ Notify exposes 5 functions.
 
 - `Notify.clear()` removes all notifications.
 
-- `Notify.setScope()` accepts a scope as a parameter. It defaults to $rootScope. To learn more about `scopes`, `digest`, and such, refer to the <a href='http://docs.angularjs.org/guide/scope'>AngularJS documentation.</a>
+- `Notify.setScope()` accepts a scope as a parameter. It defaults to $rootScope. To learn more about `scopes`, `digest` and such, refer to the &#60;a href='http://docs.angularjs.org/guide/scope'&#62;AngularJS documentation.&#60;/a&#62;
 
 
 ###Notes
-Developed by <a href='http://twitter.com/ishmaelsalive'>Ishmael</a>. <br />
+Developed by <a href='http://twitter.com/ishmaelsalive'>Ishmael</a>. &#60;br />
 
 Feedback, suggestions? Tweet me <a href='http://twitter.com/ishmaelsalive'>@IshmaelsAlive</a>. <br />
 Need some personal help? Email me @ <a href='mailto:ishmaelthedestroyer@gmail.com?Subject=LazyNMean'>ishmaelthedestroyer@gmail.com</a>
