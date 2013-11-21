@@ -15,6 +15,19 @@ Simple setup. First, copy this HTML onto your UI.
 &#60;/div&#62;
 </pre>
 
+Next, copy this CSS into a stylesheet or the head of your index.html file:
+
+<pre>
+.notification-container {
+    width: 400px;
+    height: auto;
+    right: 100px;
+    top: 60px;
+    position: fixed;
+    z-index: 50000;
+}
+</pre>
+
 Next, sync a variable in a controller with Notify's notifications using `Notify.list()`. Make sure you expose it to the controller's $scope, like so. (Coffeescript)
 
 <pre>
